@@ -106,6 +106,10 @@ app.get('/', (req, res) => {
     res.send('Running the side server');
 });
 
+app.get('/hero', (req, res) => {
+    res.sendStatus('Hero meets hero ku')
+})
+
 app.listen(port, () => {
     console.log('Repair server is started');
 })
